@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="600.0" prefWidth="800.0" styleClass="primary-color" stylesheets="@../style/Light.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChooseController">
+   <children>
+      <ImageView disable="true" fitHeight="200.0" fitWidth="300.0" layoutX="271.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="one" layoutX="300.0" layoutY="270.0" mnemonicParsing="false" onAction="#OneDie" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #21618c;" styleClass="round-border" stylesheets="@../style/Light.css" text="One Die">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="two" layoutX="300.0" layoutY="370.0" mnemonicParsing="false" onAction="#TwoDie" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #21618c;" styleClass="round-border" stylesheets="@../style/Light.css" text="Two Die">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="monopoly" layoutX="300.0" layoutY="470.0" mnemonicParsing="false" onAction="#MonopolyDie" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #21618c;" styleClass="round-border" stylesheets="@../style/Light.css" text="Monopoly Die">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

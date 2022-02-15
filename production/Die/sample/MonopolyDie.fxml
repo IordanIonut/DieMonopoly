@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="600.0" prefWidth="800.0" styleClass="primary-color" stylesheets="@../style/Light.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MonopolyDieController">
+   <children>
+      <ImageView fx:id="fffffff" disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" styleClass="primary-color">
+         <image>
+            <Image url="@../image/MonopolyDie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="die1" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="die2" fitHeight="150.0" fitWidth="200.0" layoutX="575.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="choose" layoutX="25.0" layoutY="65.0" mnemonicParsing="false" onAction="#ChooseDie" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #21618c;" styleClass="round-border" stylesheets="@../style/Light.css" text="Choose Die">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="roll" layoutX="575.0" layoutY="65.0" mnemonicParsing="false" onAction="#RollDie" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #21618c;" styleClass="round-border" stylesheets="@../style/Light.css" text="Roll">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="die3" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
